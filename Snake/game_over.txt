@@ -1,0 +1,285 @@
+########################################
+#                                      #
+#     oooO    oo     o     o  ooooO    #
+#    o       o  o    o o o o  o        #
+#    o  oo  O    o   o  o  o  ooooo    #
+#    o   o  oooooo   o     o  o        #
+#     Oooo  O    o   O     O  ooooO    #
+#                                      #
+#     Ooo    o   O   ooooO    oooo     #
+#    o   o   o   o   o        o   O    #
+#    o   o   o   o   ooooo    oooo     #
+#    o   o    o o    o        o o      #
+#     ooO      O     ooooO    o  O     #
+#                                      #
+########################################
+########################################
+#                                      #
+#    ooooO    oo     oo   oo  oooooO   #
+#    o       o  o    o o o o  o        #
+#    o   o Oo    o   o  o  o  oooo     #
+#        o  oooooo   o     o  o        #
+#    Ooooo  o       Oo     o  oooooO   #
+#           O              O           #
+#     oooo       O   oooooO   ooooo    #
+#     O  o   o   o   o        o   O    #
+#    o   o   o   o   oooo     oooo     #
+#    o        o oo   o        o  o     #
+#    oooO     oO     ooooo       o     #
+#                        O       O     #
+########################################
+########################################
+#        O                         O   #
+#    ooooo   ooo     oo    o  oooooo   #
+#    o     O o  o    o o   o  o        #
+#          ooo       o  o  o  ooo      #
+#        o  ooooo    o     o       O   #
+#   Oooooo  o      Ooo     o  oooooo   #
+#          Oo    O         oO          #
+#     oooo       o   ooooooO  ooooo    #
+#    Oo  o   o   o   o            oO   #
+#            oo  o   ooo      oooo     #
+#    o        o  o   o           o     #
+#    ooooO    oo     ooooo       o     #
+#              O         oO      O     #
+########################################
+########################################
+#        o                         o   #
+#    ooooo O ooo     oo       oooooo   #
+#          o o o     o o   o  o        #
+#          ooo       o     o  oo   O   #
+#   O       oooo   O o     o       o   #
+#   oooooo  o      ooo     o  oooooo   #
+#         Ooo    oO        ooO         #
+#     oooo       o   oooooooO  oooo    #
+#   Ooo          o                ooO  #
+#            oo  o   oo        ooo     #
+#             o  o   o           o     #
+#    ooooo    oo     ooooo       o     #
+#        O     o         ooO     o     #
+########################################
+########################################
+#        o O                       o   #
+#    ooooo o ooo     oo       oooooo   #
+#          o o       o        o        #
+#   O      ooo     O o     o  o    oO  #
+#   o       ooo    o o     o       o   #
+#   ooooo   o      ooo     o   ooooo   #
+#        Oooo    ooO       oooO        #
+#     ooo        o    oooooooO  ooo    #
+#  Oooo          o                oooO #
+#             o  o   oo         oo     #
+#             o      o           o     #
+#    ooooo    oo     ooooo       o     #
+#        o     o         ooO     o     #
+########################################
+########################################
+#        o o                       o   #
+#     oooo o oo      o        oooooo   #
+#          o o     O o        o        #
+#  Oo      ooo     o o             ooO #
+#   o       oo     o o     o       o   #
+#   ooooo   o      ooo     o    oooo   #
+#       Ooooo    oooO      ooooO       #
+#     oo         o     ooooooo   oo    #
+# Ooooo          o           O    ooooO#
+#                    o           o     #
+#             o      o           o     #
+#     oooo    oo     ooooo       o     #
+#        o     o         ooo     o     #
+########################################
+########################################
+#        o o       o               o   #
+#      ooo o o     o          oooooo   #
+#          o o     o                   #
+# Ooo      ooo     o o             oooo#
+#   o       o      o o             o   #
+#   oooo    o      ooo     o      oo   #
+#      Oooooo    oooooO    oooooO      #
+#     o                 oooooo    o    #
+#Oooooo                      o    ooooo#
+#                            oO        #
+#                    o           o     #
+#      ooo    oo     ooooo       o     #
+#        o     o         ooo     o     #
+########################################
+########################################
+#        o o       o               o   #
+#       oo o       o           ooooo   #
+#          o o     o                   #
+#oooo      ooo     o               oooo#
+#   o              o               o   #
+#   oo      o      ooo                 #
+#      oooooo      oooooO  ooooooO     #
+#      O                oooooo    o    #
+#oooooo                      o    ooooo#
+#                            oO        #
+#                                      #
+#       oo     o     ooooo       o     #
+#        o     o         ooo     o     #
+########################################
+########################################
+#        o o       o               o   #
+#        o o       o            oooo   #
+#          o       o                   #
+#oooo      ooo     o               oooo#
+#   o              o                   #
+#   o              o                   #
+#      oooooo        oooooO  ooooooO   #
+#     Oo                 ooooo         #
+#ooooo                       o    ooooo#
+#                            ooO       #
+#                                      #
+#        o            oooo             #
+#        o     o         ooo     o     #
+########################################
+########################################
+#        o o       o               o   #
+#          o       o             ooo   #
+#          o       o                   #
+#oooo      o       o                ooo#
+#   o                                  #
+#                                      #
+#      ooooo           oooooO  ooooooO #
+#    Ooo                  oooo         #
+#ooo                         o      ooo#
+#                            oooO      #
+#                                      #
+#                      ooo             #
+#        o     o         ooo     o     #
+########################################
+########################################
+#          o       o               o   #
+#          o       o              oo   #
+#          o                           #
+#oooo                                oo#
+#                                      #
+#                                      #
+#      ooooo            oooooO  ooooooO#
+#   Oooo                    oo         #
+#oo                          o       oo#
+#                            oooooO    #
+#                                      #
+#                       oo             #
+#                        ooo           #
+########################################
+########################################
+#          o       o               o   #
+#          o                       o   #
+#                                      #
+#oo                                   o#
+#                                      #
+#                                      #
+#      ooo               oooooO   ooooo#
+# Oooooo                               #
+#o                           o        o#
+#                            oooooooO  #
+#                                      #
+#                        o             #
+#                        ooo           #
+########################################
+########################################
+#          o                       o   #
+#                                      #
+#                                      #
+#o                                     #
+#                                      #
+#                                      #
+#      o                   oooooO   ooo#
+#ooooooo                               #
+#                                      #
+#                              oooooooO#
+#                                      #
+#                                      #
+#                        ooo           #
+########################################
+########################################
+#                                      #
+#                                      #
+#                                      #
+#                                      #
+#                                      #
+#                                      #
+#                            oooooO  oo#
+#oooooo                                #
+#                                      #
+#                               ooooooo#
+#                                      #
+#                                      #
+#                         oo           #
+########################################
+########################################
+#                                      #
+#                                      #
+#                                      #
+#                                      #
+#                                      #
+#                                      #
+#                              oooooO o#
+#oooo                                  #
+#                                      #
+#                                 ooooo#
+#                                      #
+#                                      #
+#                          o           #
+########################################
+########################################
+#                                      #
+#                                      #
+#                                      #
+#                                      #
+#                                      #
+#                                      #
+#                                oooooO#
+#ooo                                   #
+#                                      #
+#                                  oooo#
+#                                      #
+#                                      #
+#                                      #
+########################################
+########################################
+#                                      #
+#                                      #
+#                                      #
+#                                      #
+#                                      #
+#                                      #
+#                                  oooo#
+#oo                                    #
+#                                      #
+#                                    oo#
+#                                      #
+#                                      #
+#                                      #
+########################################
+########################################
+#                                      #
+#                                      #
+#                                      #
+#                                      #
+#                                      #
+#                                      #
+#                                    oo#
+#o                                     #
+#                                      #
+#                                     o#
+#                                      #
+#                                      #
+#                                      #
+########################################
+########################################
+#                                      #
+#                                      #
+#     I F   Y O U   W A N T   T O      #
+#                                      #
+#         P L A Y   A G A I N          #
+#                                      #
+#           P R E S S   A              #
+#                                      #
+#                                      #
+#            T O    E X I T            #
+#                                      #
+#            P R E S S   x             #
+#                                      #
+########################################

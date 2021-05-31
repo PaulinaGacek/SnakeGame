@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/pauli/CLionProjects/Snake/Board.h
+Snake.h
+C:/Users/pauli/CLionProjects/Snake/Snake.h
+fstream
+-
+iostream
+-
+windows.h
+-
+mmsystem.h
+-
+
+C:/Users/pauli/CLionProjects/Snake/GameRound.cpp
+GameRound.h
+C:/Users/pauli/CLionProjects/Snake/GameRound.h
+
+C:/Users/pauli/CLionProjects/Snake/GameRound.h
+Snake.h
+C:/Users/pauli/CLionProjects/Snake/Snake.h
+Board.h
+C:/Users/pauli/CLionProjects/Snake/Board.h
+iostream
+-
+windows.h
+-
+mmsystem.h
+-
+
+C:/Users/pauli/CLionProjects/Snake/Snake.h
+
