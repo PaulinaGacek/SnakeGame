@@ -22,10 +22,9 @@ protected:
 
 private:
     Snake snake;
-    QImage body;
-    QImage head;
-    QImage coin;
-    QImage brick;
+    QImage body, coin, brick, apple;
+    QImage head_UP, head_DOWN, head_RIGHT, head_LEFT;
+    QImage head_UP_BR, head_DOWN_BR, head_RIGHT_BR, head_LEFT_BR;
 
     static constexpr int WIDTH = 300;
     static constexpr int HEIGHT = 300;
@@ -37,20 +36,25 @@ private:
 
     int timerId;
     unsigned int score = 0;
+    unsigned int high_score = 0;
 
     unsigned int fruit_x_pos;
     unsigned int fruit_y_pos;
 
-    bool inGame = true;
+    bool game_on = true;
 
-    void loadImages();
-    void initGame();
+    void load_images();
+    void play_game();
     void set_new_fruit_position();
     void check_score();
-    void checkCollision();
-    void move();
+    void check_collision();
+    void animate_snake();
     void display_board();
-    void gameOver(QPainter &);
+    void display_welcome();
+    void game_over(QPainter &qp);
     static void play_game_over_music();
+    void save_score();
+    unsigned int get_high_score_from_file();
 };
+
 #endif //SNAKE2QT_BOARD_H

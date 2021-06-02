@@ -2,32 +2,46 @@
 #include <QTime>
 #include "Board.h"
 #include <random>
+#include <thread>
+#include <ctime>
 
 Board::Board(QWidget *parent) : QWidget(parent) {
 
     setStyleSheet("background-color: rgb(216, 216, 209)");
 
     setFixedSize(WIDTH, HEIGHT);
-    loadImages();
-    initGame();
+    load_images();
+    play_game();
 }
 
-void Board::loadImages() {
+void Board::load_images() {
 
     body.load("body.png");
-    head.load("head.png");
     coin.load("coin.png");
     brick.load("brick.png");
+    apple.load("apple.png");
+
+    head_UP.load("head_UP.png");
+    head_DOWN.load("head_DOWN.png");
+    head_RIGHT.load("head_RIGHT.png");
+    head_LEFT.load("head_LEFT.png");
+
+    head_UP_BR.load("head_UP_BR.png");
+    head_DOWN_BR.load("head_DOWN_BR.png");
+    head_RIGHT_BR.load("head_RIGHT_BR.png");
+    head_LEFT_BR.load("head_LEFT_BR.png");
 }
 
-void Board::initGame() {
+void Board::play_game() {
 
     for (int i = 0; i < snake.get_length(); ++i) {
-        snake.set_tail_X(i,50-i*10);
+        snake.set_tail_X(i,50-i*11);
         snake.set_tail_Y(i,50);
     }
     set_new_fruit_position();
+    high_score = get_high_score_from_file();
     timerId = startTimer(DELAY/snake.get_speed());
+    display_welcome();
 }
 
 void Board::paintEvent(QPaintEvent *e) {
@@ -40,8 +54,8 @@ void Board::display_board() {
 
     QPainter qp(this);
 
-    if (inGame) {
-        qp.drawImage((int)fruit_x_pos, (int)fruit_y_pos, coin);
+    if (game_on) {
+        qp.drawImage((int)fruit_x_pos, (int)fruit_y_pos, apple);
         for(int i = 0; i < WIDTH/PIXEL_SIZE; ++i)
         {
             qp.drawImage(i*PIXEL_SIZE-1,-1,brick);
@@ -53,36 +67,93 @@ void Board::display_board() {
                 qp.drawImage(WIDTH-PIXEL_SIZE,j*PIXEL_SIZE,brick);
             }
         }
-
-        for (int i = 0; i < snake.get_length(); ++i) {
-            if (i == 0) {
-                qp.drawImage(snake.get_tail_X(i), snake.get_tail_Y(i), head);
-            } else {
+        switch (snake.get_direction()) {
+            case Direction::STOP:
+                qp.drawImage(snake.get_tail_X(0), snake.get_tail_Y(0), head_RIGHT);
+                break;
+            case Direction::LEFT:
+                if(snake.get_tail_X(0) < PIXEL_SIZE )
+                    qp.drawImage(snake.get_tail_X(0), snake.get_tail_Y(0), head_LEFT_BR);
+                else
+                    qp.drawImage(snake.get_tail_X(0), snake.get_tail_Y(0), head_LEFT);
+                break;
+            case Direction::RIGHT:
+                if (snake.get_tail_X(0) >= WIDTH-PIXEL_SIZE)
+                    qp.drawImage(snake.get_tail_X(0), snake.get_tail_Y(0), head_RIGHT_BR);
+                else
+                    qp.drawImage(snake.get_tail_X(0), snake.get_tail_Y(0), head_RIGHT);
+                break;
+            case Direction::UP:
+                if (snake.get_tail_Y(0)< PIXEL_SIZE)
+                    qp.drawImage(snake.get_tail_X(0), snake.get_tail_Y(0), head_UP_BR);
+                else
+                    qp.drawImage(snake.get_tail_X(0), snake.get_tail_Y(0), head_UP);
+                break;
+            case Direction::DOWN:
+                if (snake.get_tail_Y(0) >= HEIGHT-3*PIXEL_SIZE)
+                    qp.drawImage(snake.get_tail_X(0), snake.get_tail_Y(0), head_DOWN_BR);
+                else
+                    qp.drawImage(snake.get_tail_X(0), snake.get_tail_Y(0), head_DOWN);
+                break;
+        }
+        for (int i = 1; i < snake.get_length(); ++i) {
                 qp.drawImage(snake.get_tail_X(i), snake.get_tail_Y(i), body);
-            }
         }
         QString message = "Score: ";
+        QString message2 = "   High Score: ";
         QString s = QString::number(score);
+        QString hs = QString::number(high_score);
         QFont font("Courier", 9, QFont::DemiBold);
         QFontMetrics fm(font);
         qp.setFont(font);
-        qp.drawText(2* PIXEL_SIZE, HEIGHT-PIXEL_SIZE, message+s);
+        qp.drawText(2* PIXEL_SIZE, HEIGHT-PIXEL_SIZE, message+s+message2+hs);
     }
     else {
-        gameOver(qp);
+        game_over(qp);
     }
 }
-
-void Board::gameOver(QPainter &qp) {
-
-    QString message = "Game over";
-    QFont font("Courier", 17, QFont::DemiBold);
+void Board::display_welcome() {
+    QPainter qp(this);
+    for(int i = 0; i < WIDTH/PIXEL_SIZE; ++i)
+    {
+        qp.drawImage(i*PIXEL_SIZE-1,-1,brick);
+        qp.drawImage(i*PIXEL_SIZE-1,HEIGHT-3*PIXEL_SIZE+1,brick);
+        qp.drawImage(i*PIXEL_SIZE-1,HEIGHT-PIXEL_SIZE+1,brick);
+        for(int j = 1; j < HEIGHT/PIXEL_SIZE-1; ++j)
+        {
+            qp.drawImage(-1,j*PIXEL_SIZE,brick);
+            qp.drawImage(WIDTH-PIXEL_SIZE,j*PIXEL_SIZE,brick);
+        }
+    }
+    QString message = "Welcome to SNAKE";
+    QFont font("Courier", 20, QFont::DemiBold);
     QFontMetrics fm(font);
     int textWidth = fm.horizontalAdvance(message);
 
     qp.setFont(font);
     int h = height();
     int w = width();
+
+    qp.translate(QPoint(w/2, h/2));
+    qp.drawText(-textWidth/2, 0, message);
+    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+    repaint();
+}
+
+
+void Board::game_over(QPainter &qp) {
+
+    QString message = "Game over";
+    QFont font("Courier", 20, QFont::DemiBold);
+    QFontMetrics fm(font);
+    int textWidth = fm.horizontalAdvance(message);
+
+    qp.setFont(font);
+    int h = height();
+    int w = width();
+
+    save_score();
+    if(score > high_score) high_score = score;
 
     qp.translate(QPoint(w/2, h/2));
     qp.drawText(-textWidth/2, 0, message);
@@ -98,7 +169,7 @@ void Board::check_score() {
     }
 }
 
-void Board::move() {
+void Board::animate_snake() {
 
     for (unsigned int i = snake.get_length(); i > 0; --i) {
         snake.set_tail_X(i,snake.get_tail_X(i-1));
@@ -122,33 +193,33 @@ void Board::move() {
     }
 }
 
-void Board::checkCollision() {
+void Board::check_collision() {
 
     for (unsigned int i = snake.get_length(); i > 0; --i) {
 
         if ((i > 4) && (snake.get_tail_X(0) == snake.get_tail_X(i))
         && (snake.get_tail_Y(0) == snake.get_tail_Y(i))) {
-            inGame = false;
+            game_on = false;
         }
     }
 
     if (snake.get_tail_Y(0) >= HEIGHT-3*PIXEL_SIZE) {
-        inGame = false;
+        game_on = false;
     }
 
     if (snake.get_tail_Y(0)< PIXEL_SIZE) {
-        inGame = false;
+        game_on = false;
     }
 
     if (snake.get_tail_X(0) >= WIDTH-PIXEL_SIZE) {
-        inGame = false;
+        game_on = false;
     }
 
     if (snake.get_tail_X(0) < PIXEL_SIZE) {
-        inGame = false;
+        game_on = false;
     }
 
-    if(!inGame) {
+    if(!game_on) {
         killTimer(timerId);
     }
 }
@@ -163,10 +234,10 @@ void Board::set_new_fruit_position() {
 void Board::timerEvent(QTimerEvent *e) {
 
     Q_UNUSED(e);
-    if (inGame) {
+    if (game_on) {
         check_score();
-        checkCollision();
-        move();
+        check_collision();
+        animate_snake();
     }
     repaint();
 }
@@ -204,3 +275,33 @@ void Board::play_game_over_music() {
     }
     game_over_music_file.close();
 }
+
+void Board::save_score() {
+    std::fstream log_file;
+    log_file.open("high_score.txt", std::ios_base::app);
+    time_t now = time(nullptr);
+    char buffer[100] = {};
+    strftime(buffer, sizeof(buffer),"%d-%m-%Y %H:%M:%S", gmtime(&now));
+
+    log_file << score << " : " << buffer<< "\n";
+    std::cout << score;
+    log_file.close();
+}
+
+unsigned int Board::get_high_score_from_file() {
+    int hs = 0;
+    std::fstream log_file;
+    log_file.open("high_score.txt");
+    while(!log_file.eof())
+    {
+        int temp_score;
+        log_file >> temp_score;
+        if(temp_score > high_score)
+            hs = temp_score;
+        char buffer[40] = {};
+        log_file.getline(buffer,39);
+    }
+    log_file.close();
+    return hs;
+}
+

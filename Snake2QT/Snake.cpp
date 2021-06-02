@@ -27,3 +27,4 @@ int Snake::get_tail_Y(size_t index) {
         //throw std::invalid_argument("Invalid index");
     return y[index];
 }
+
