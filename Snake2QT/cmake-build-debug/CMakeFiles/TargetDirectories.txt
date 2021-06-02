@@ -1,0 +1,4 @@
+C:/Users/pauli/CLionProjects/Snake2QT/cmake-build-debug/CMakeFiles/Snake2QT.dir
+C:/Users/pauli/CLionProjects/Snake2QT/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/pauli/CLionProjects/Snake2QT/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/pauli/CLionProjects/Snake2QT/cmake-build-debug/CMakeFiles/Snake2QT_autogen.dir

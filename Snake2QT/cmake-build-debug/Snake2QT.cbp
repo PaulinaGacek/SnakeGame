@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Snake2QT"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\QT\;CMake Files\..\..\QT\6.2.0\;CMake Files\..\..\QT\6.2.0\msvc2019_64\;CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\;CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\;CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6\;CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6Core\;CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6CoreTools\;CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6EntryPoint\;CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6Gui\;CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6GuiTools\;CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6Widgets\;CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6WidgetsTools\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/pauli/CLionProjects/Snake2QT/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\pauli\CLionProjects\Snake2QT\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\pauli\CLionProjects\Snake2QT\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\pauli\CLionProjects\Snake2QT\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\pauli\CLionProjects\Snake2QT\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Snake2QT">
+				<Option output="C:/Users/pauli/CLionProjects/Snake2QT/cmake-build-debug/Snake2QT.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/pauli/CLionProjects/Snake2QT/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DWIN32"/>
+					<Add option="-D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+					<Add option="-DWIN64"/>
+					<Add option="-D_WIN64"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add directory="C:/Users/pauli/CLionProjects/Snake2QT/cmake-build-debug/Snake2QT_autogen/include"/>
+					<Add directory="C:/Users/pauli/QT/6.2.0/msvc2019_64/include/QtCore"/>
+					<Add directory="C:/Users/pauli/QT/6.2.0/msvc2019_64/include"/>
+					<Add directory="C:/Users/pauli/QT/6.2.0/msvc2019_64/mkspecs/win32-msvc"/>
+					<Add directory="C:/Users/pauli/QT/6.2.0/msvc2019_64/include/QtGui"/>
+					<Add directory="C:/Users/pauli/QT/6.2.0/msvc2019_64/include/QtWidgets"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\pauli\CLionProjects\Snake2QT\cmake-build-debug\Makefile VERBOSE=1 Snake2QT"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\pauli\CLionProjects\Snake2QT\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\pauli\CLionProjects\Snake2QT\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\pauli\CLionProjects\Snake2QT\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Snake2QT/fast">
+				<Option output="C:/Users/pauli/CLionProjects/Snake2QT/cmake-build-debug/Snake2QT.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/pauli/CLionProjects/Snake2QT/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DWIN32"/>
+					<Add option="-D_ENABLE_EXTENDED_ALIGNED_STORAGE"/>
+					<Add option="-DWIN64"/>
+					<Add option="-D_WIN64"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add directory="C:/Users/pauli/CLionProjects/Snake2QT/cmake-build-debug/Snake2QT_autogen/include"/>
+					<Add directory="C:/Users/pauli/QT/6.2.0/msvc2019_64/include/QtCore"/>
+					<Add directory="C:/Users/pauli/QT/6.2.0/msvc2019_64/include"/>
+					<Add directory="C:/Users/pauli/QT/6.2.0/msvc2019_64/mkspecs/win32-msvc"/>
+					<Add directory="C:/Users/pauli/QT/6.2.0/msvc2019_64/include/QtGui"/>
+					<Add directory="C:/Users/pauli/QT/6.2.0/msvc2019_64/include/QtWidgets"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\pauli\CLionProjects\Snake2QT\cmake-build-debug\Makefile VERBOSE=1 Snake2QT/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\pauli\CLionProjects\Snake2QT\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\pauli\CLionProjects\Snake2QT\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\pauli\CLionProjects\Snake2QT\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/pauli/CLionProjects/Snake2QT/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\pauli\CLionProjects\Snake2QT\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\pauli\CLionProjects\Snake2QT\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\pauli\CLionProjects\Snake2QT\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\pauli\CLionProjects\Snake2QT\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/pauli/CLionProjects/Snake2QT/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\pauli\CLionProjects\Snake2QT\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\pauli\CLionProjects\Snake2QT\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\pauli\CLionProjects\Snake2QT\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\pauli\CLionProjects\Snake2QT\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Snake2QT_autogen">
+				<Option working_dir="C:/Users/pauli/CLionProjects/Snake2QT/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\pauli\CLionProjects\Snake2QT\cmake-build-debug\Makefile VERBOSE=1 Snake2QT_autogen"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\pauli\CLionProjects\Snake2QT\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\pauli\CLionProjects\Snake2QT\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\pauli\CLionProjects\Snake2QT\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/Board.cpp">
+			<Option target="Snake2QT"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/Board.h">
+			<Option target="Snake2QT"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/Snake.cpp">
+			<Option target="Snake2QT"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/Snake.h">
+			<Option target="Snake2QT"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/cmake-build-debug/Snake2QT_autogen/mocs_compilation.cpp">
+			<Option target="Snake2QT"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/main.cpp">
+			<Option target="Snake2QT"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6/FindWrapAtomic.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6/Qt6Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6/Qt6Dependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6/Qt6Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6/Qt6VersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6/QtFeature.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6/QtFeatureCommon.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6/QtPublicPluginHelpers.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6/QtPublicTargetHelpers.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreTargets-debug.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6CoreTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6CoreTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6CoreTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6CoreTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets-debug.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6CoreTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6CoreTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6CoreTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6CoreTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6EntryPoint/Qt6EntryPointAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6EntryPoint\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6EntryPoint/Qt6EntryPointConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6EntryPoint\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6EntryPoint/Qt6EntryPointConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6EntryPoint\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6EntryPoint/Qt6EntryPointTargets-debug.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6EntryPoint\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6EntryPoint/Qt6EntryPointTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6EntryPoint\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6EntryPoint/Qt6EntryPointTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6EntryPoint\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6EntryPoint/Qt6EntryPointVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6EntryPoint\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6Gui/Qt6GuiTargets-debug.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6Gui/Qt6GuiTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6Gui/Qt6GuiVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-debug.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets-debug.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-debug.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/../../QT/6.2.0/msvc2019_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\QT\6.2.0\msvc2019_64\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
