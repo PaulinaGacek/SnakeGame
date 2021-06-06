@@ -132,10 +132,25 @@
 		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/Snake.h">
 			<Option target="Snake2QT"/>
 		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/StartWindow.cpp">
+			<Option target="Snake2QT"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/StartWindow.h">
+			<Option target="Snake2QT"/>
+		</Unit>
 		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/cmake-build-debug/Snake2QT_autogen/mocs_compilation.cpp">
 			<Option target="Snake2QT"/>
 		</Unit>
 		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/main.cpp">
+			<Option target="Snake2QT"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/st_window.cpp">
+			<Option target="Snake2QT"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/st_window.h">
+			<Option target="Snake2QT"/>
+		</Unit>
+		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/st_window.ui">
 			<Option target="Snake2QT"/>
 		</Unit>
 		<Unit filename="C:/Users/pauli/CLionProjects/Snake2QT/CMakeLists.txt">

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ui version="4.0">
+    <author/>
+    <comment/>
+    <exportmacro/>
+    <class>St_Window</class>
+    <widget class="QDialog" name="St_Window">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>400</width>
+                <height>350</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>Welcome to Snake</string>
+        </property>
+
+        <property name="styleSheet">
+            <string notr="true">background-color: rgb(216, 216, 209);</string>
+        </property>
+
+        <widget class="QWidget" name="centralwidget">
+            <widget class="QPushButton" name="pushButton">
+                <property name="geometry">
+                    <rect>
+                        <x>260</x>
+                        <y>260</y>
+                        <width>121</width>
+                        <height>51</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Bookman Old Style</family>
+                        <pointsize>10</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                    </font>
+                </property>
+                <property name="text">
+                    <string>PLAY</string>
+                </property>
+                <property name="iconSize">
+                    <size>
+                        <width>28</width>
+                        <height>25</height>
+                    </size>
+                </property>
+                <property name="autoDefault">
+                    <bool>true</bool>
+                </property>
+            </widget>
+            <widget class="QLabel" name="piq">
+                <property name="geometry">
+                    <rect>
+                        <x>50</x>
+                        <y>50</y>
+                        <width>301</width>
+                        <height>181</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string/>
+                </property>
+                <property name="pixmap">
+                    <pixmap>../../CLionProjects/Snake2QT/cmake-build-debug/WelcomeIMG.png</pixmap>
+                </property>
+            </widget>
+        </widget>
+
+    </widget>
+    <pixmapfunction/>
+    <connections/>
+</ui>

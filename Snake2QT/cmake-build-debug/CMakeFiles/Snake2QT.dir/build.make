@@ -137,12 +137,52 @@ CMakeFiles\Snake2QT.dir\Snake.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Snake2QT.dir\Snake.cpp.s /c C:\Users\pauli\CLionProjects\Snake2QT\Snake.cpp
 <<
 
+CMakeFiles\Snake2QT.dir\StartWindow.cpp.obj: CMakeFiles\Snake2QT.dir\flags.make
+CMakeFiles\Snake2QT.dir\StartWindow.cpp.obj: ..\StartWindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\pauli\CLionProjects\Snake2QT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Snake2QT.dir/StartWindow.cpp.obj"
+	"C:\PROGRA~2\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\bin\Hostx64\x64\cl.exe" @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Snake2QT.dir\StartWindow.cpp.obj /FdCMakeFiles\Snake2QT.dir\ /FS -c C:\Users\pauli\CLionProjects\Snake2QT\StartWindow.cpp
+<<
+
+CMakeFiles\Snake2QT.dir\StartWindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Snake2QT.dir/StartWindow.cpp.i"
+	"C:\PROGRA~2\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\bin\Hostx64\x64\cl.exe" > CMakeFiles\Snake2QT.dir\StartWindow.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\pauli\CLionProjects\Snake2QT\StartWindow.cpp
+<<
+
+CMakeFiles\Snake2QT.dir\StartWindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Snake2QT.dir/StartWindow.cpp.s"
+	"C:\PROGRA~2\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\bin\Hostx64\x64\cl.exe" @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Snake2QT.dir\StartWindow.cpp.s /c C:\Users\pauli\CLionProjects\Snake2QT\StartWindow.cpp
+<<
+
+CMakeFiles\Snake2QT.dir\st_window.cpp.obj: CMakeFiles\Snake2QT.dir\flags.make
+CMakeFiles\Snake2QT.dir\st_window.cpp.obj: ..\st_window.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\pauli\CLionProjects\Snake2QT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Snake2QT.dir/st_window.cpp.obj"
+	"C:\PROGRA~2\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\bin\Hostx64\x64\cl.exe" @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Snake2QT.dir\st_window.cpp.obj /FdCMakeFiles\Snake2QT.dir\ /FS -c C:\Users\pauli\CLionProjects\Snake2QT\st_window.cpp
+<<
+
+CMakeFiles\Snake2QT.dir\st_window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Snake2QT.dir/st_window.cpp.i"
+	"C:\PROGRA~2\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\bin\Hostx64\x64\cl.exe" > CMakeFiles\Snake2QT.dir\st_window.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\pauli\CLionProjects\Snake2QT\st_window.cpp
+<<
+
+CMakeFiles\Snake2QT.dir\st_window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Snake2QT.dir/st_window.cpp.s"
+	"C:\PROGRA~2\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\bin\Hostx64\x64\cl.exe" @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Snake2QT.dir\st_window.cpp.s /c C:\Users\pauli\CLionProjects\Snake2QT\st_window.cpp
+<<
+
 # Object files for target Snake2QT
 Snake2QT_OBJECTS = \
 "CMakeFiles\Snake2QT.dir\Snake2QT_autogen\mocs_compilation.cpp.obj" \
 "CMakeFiles\Snake2QT.dir\main.cpp.obj" \
 "CMakeFiles\Snake2QT.dir\Board.cpp.obj" \
-"CMakeFiles\Snake2QT.dir\Snake.cpp.obj"
+"CMakeFiles\Snake2QT.dir\Snake.cpp.obj" \
+"CMakeFiles\Snake2QT.dir\StartWindow.cpp.obj" \
+"CMakeFiles\Snake2QT.dir\st_window.cpp.obj"
 
 # External object files for target Snake2QT
 Snake2QT_EXTERNAL_OBJECTS =
@@ -151,12 +191,14 @@ Snake2QT.exe: CMakeFiles\Snake2QT.dir\Snake2QT_autogen\mocs_compilation.cpp.obj
 Snake2QT.exe: CMakeFiles\Snake2QT.dir\main.cpp.obj
 Snake2QT.exe: CMakeFiles\Snake2QT.dir\Board.cpp.obj
 Snake2QT.exe: CMakeFiles\Snake2QT.dir\Snake.cpp.obj
+Snake2QT.exe: CMakeFiles\Snake2QT.dir\StartWindow.cpp.obj
+Snake2QT.exe: CMakeFiles\Snake2QT.dir\st_window.cpp.obj
 Snake2QT.exe: CMakeFiles\Snake2QT.dir\build.make
 Snake2QT.exe: C:\Users\pauli\QT\6.2.0\msvc2019_64\lib\Qt6Widgetsd.lib
 Snake2QT.exe: C:\Users\pauli\QT\6.2.0\msvc2019_64\lib\Qt6Guid.lib
 Snake2QT.exe: C:\Users\pauli\QT\6.2.0\msvc2019_64\lib\Qt6Cored.lib
 Snake2QT.exe: CMakeFiles\Snake2QT.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\pauli\CLionProjects\Snake2QT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Snake2QT.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\pauli\CLionProjects\Snake2QT\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Snake2QT.exe"
 	"C:\Program Files\JetBrains\CLion 2020.3\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\Snake2QT.dir --rc="C:\PROGRA~2\Windows Kits\10\bin\10.0.18362.0\x64\rc.exe" --mt="C:\PROGRA~2\Windows Kits\10\bin\10.0.18362.0\x64\mt.exe" --manifests  -- "C:\PROGRA~2\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\bin\Hostx64\x64\link.exe" /nologo @CMakeFiles\Snake2QT.dir\objects1.rsp @<<
  /out:Snake2QT.exe /implib:Snake2QT.lib /pdb:C:\Users\pauli\CLionProjects\Snake2QT\cmake-build-debug\Snake2QT.pdb /version:0.0  /machine:x64 /debug /INCREMENTAL /subsystem:console  winmm.lib C:\Users\pauli\QT\6.2.0\msvc2019_64\lib\Qt6Widgetsd.lib C:\Users\pauli\QT\6.2.0\msvc2019_64\lib\Qt6Guid.lib C:\Users\pauli\QT\6.2.0\msvc2019_64\lib\Qt6Cored.lib mpr.lib userenv.lib d3d11.lib dxgi.lib dxguid.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<

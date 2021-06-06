@@ -221,6 +221,33 @@ Snake2QT_autogen\mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snake2QT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Snake2QT.dir\Snake2QT_autogen\mocs_compilation.cpp.s
 .PHONY : Snake2QT_autogen\mocs_compilation.cpp.s
 
+StartWindow.obj: StartWindow.cpp.obj
+
+.PHONY : StartWindow.obj
+
+# target to build an object file
+StartWindow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snake2QT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Snake2QT.dir\StartWindow.cpp.obj
+.PHONY : StartWindow.cpp.obj
+
+StartWindow.i: StartWindow.cpp.i
+
+.PHONY : StartWindow.i
+
+# target to preprocess a source file
+StartWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snake2QT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Snake2QT.dir\StartWindow.cpp.i
+.PHONY : StartWindow.cpp.i
+
+StartWindow.s: StartWindow.cpp.s
+
+.PHONY : StartWindow.s
+
+# target to generate assembly for a file
+StartWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snake2QT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Snake2QT.dir\StartWindow.cpp.s
+.PHONY : StartWindow.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -248,6 +275,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snake2QT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Snake2QT.dir\main.cpp.s
 .PHONY : main.cpp.s
 
+st_window.obj: st_window.cpp.obj
+
+.PHONY : st_window.obj
+
+# target to build an object file
+st_window.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snake2QT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Snake2QT.dir\st_window.cpp.obj
+.PHONY : st_window.cpp.obj
+
+st_window.i: st_window.cpp.i
+
+.PHONY : st_window.i
+
+# target to preprocess a source file
+st_window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snake2QT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Snake2QT.dir\st_window.cpp.i
+.PHONY : st_window.cpp.i
+
+st_window.s: st_window.cpp.s
+
+.PHONY : st_window.s
+
+# target to generate assembly for a file
+st_window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snake2QT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Snake2QT.dir\st_window.cpp.s
+.PHONY : st_window.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -267,9 +321,15 @@ help:
 	@echo ... Snake2QT_autogen/mocs_compilation.obj
 	@echo ... Snake2QT_autogen/mocs_compilation.i
 	@echo ... Snake2QT_autogen/mocs_compilation.s
+	@echo ... StartWindow.obj
+	@echo ... StartWindow.i
+	@echo ... StartWindow.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... st_window.obj
+	@echo ... st_window.i
+	@echo ... st_window.s
 .PHONY : help
 
 

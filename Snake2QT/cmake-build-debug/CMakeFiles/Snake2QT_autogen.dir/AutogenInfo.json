@@ -197,6 +197,16 @@
 			"C:/Users/pauli/CLionProjects/Snake2QT/Snake.h",
 			"MU",
 			"EWIEGA46WW/moc_Snake.cpp"
+		],
+		[
+			"C:/Users/pauli/CLionProjects/Snake2QT/StartWindow.h",
+			"MU",
+			"EWIEGA46WW/moc_StartWindow.cpp"
+		],
+		[
+			"C:/Users/pauli/CLionProjects/Snake2QT/st_window.h",
+			"MU",
+			"EWIEGA46WW/moc_st_window.cpp"
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -246,7 +256,9 @@
 	[
 		[ "C:/Users/pauli/CLionProjects/Snake2QT/Board.cpp", "MU" ],
 		[ "C:/Users/pauli/CLionProjects/Snake2QT/Snake.cpp", "MU" ],
-		[ "C:/Users/pauli/CLionProjects/Snake2QT/main.cpp", "MU" ]
+		[ "C:/Users/pauli/CLionProjects/Snake2QT/StartWindow.cpp", "MU" ],
+		[ "C:/Users/pauli/CLionProjects/Snake2QT/main.cpp", "MU" ],
+		[ "C:/Users/pauli/CLionProjects/Snake2QT/st_window.cpp", "MU" ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

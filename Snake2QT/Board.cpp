@@ -1,17 +1,27 @@
 #include <QPainter>
 #include <QTime>
 #include "Board.h"
+#include "st_window.h"
+
 #include <random>
 #include <thread>
 #include <ctime>
 
 Board::Board(QWidget *parent) : QWidget(parent) {
-
+    St_Window startWindow;
+    startWindow.setModal(true);
+    startWindow.exec();
     setStyleSheet("background-color: rgb(216, 216, 209)");
-
     setFixedSize(WIDTH, HEIGHT);
     load_images();
+    high_score = get_high_score_from_file();
     play_game();
+}
+
+[[maybe_unused]] Board::Board(int h, int w, QWidget *parent) {
+    setStyleSheet("background-color: rgb(216, 216, 209)");
+    setFixedSize(w,h);
+    load_images();
 }
 
 void Board::load_images() {
@@ -39,7 +49,6 @@ void Board::play_game() {
         snake.set_tail_Y(i,50);
     }
     set_new_fruit_position();
-    high_score = get_high_score_from_file();
     timerId = startTimer(DELAY/snake.get_speed());
     display_welcome();
 }
@@ -226,9 +235,24 @@ void Board::check_collision() {
 
 void Board::set_new_fruit_position() {
 
-    fruit_x_pos = fruit_y_pos = 0;
-    fruit_x_pos = (std::_Random_device() % PIXELS_X + 1) * PIXEL_SIZE;
-    fruit_y_pos = (std::_Random_device() % PIXELS_Y + 1) * PIXEL_SIZE;
+    //fruit_x_pos = fruit_y_pos = 0;
+    bool is_on_tail = true;
+    int random = 7;
+    while(is_on_tail)
+    {
+        fruit_x_pos = ((std::_Random_device()+random) % PIXELS_X + 1) * PIXEL_SIZE;
+        fruit_y_pos = ((std::_Random_device()+random-2) % PIXELS_Y + 1) * PIXEL_SIZE;
+        is_on_tail = false;
+        for(int i = 0; i < snake.get_length(); ++i)
+        {
+            if(snake.get_tail_X(i)==fruit_x_pos && snake.get_tail_Y(i)==fruit_y_pos)
+            {
+                is_on_tail = true;
+                random--;
+                break;
+            }
+        }
+    }
 }
 
 void Board::timerEvent(QTimerEvent *e) {
@@ -284,24 +308,27 @@ void Board::save_score() {
     strftime(buffer, sizeof(buffer),"%d-%m-%Y %H:%M:%S", gmtime(&now));
 
     log_file << score << " : " << buffer<< "\n";
-    std::cout << score;
     log_file.close();
 }
 
-unsigned int Board::get_high_score_from_file() {
-    int hs = 0;
+unsigned int Board::get_high_score_from_file() const {
+    unsigned int hs = 0;
     std::fstream log_file;
     log_file.open("high_score.txt");
     while(!log_file.eof())
     {
-        int temp_score;
+        unsigned int temp_score;
         log_file >> temp_score;
-        if(temp_score > high_score)
+        if( temp_score > hs )
+        {
             hs = temp_score;
+        }
         char buffer[40] = {};
         log_file.getline(buffer,39);
     }
     log_file.close();
     return hs;
 }
+
+
 

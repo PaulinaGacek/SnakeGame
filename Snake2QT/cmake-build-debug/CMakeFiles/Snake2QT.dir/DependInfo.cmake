@@ -7,7 +7,9 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/pauli/CLionProjects/Snake2QT/Board.cpp" "C:/Users/pauli/CLionProjects/Snake2QT/cmake-build-debug/CMakeFiles/Snake2QT.dir/Board.cpp.obj"
   "C:/Users/pauli/CLionProjects/Snake2QT/Snake.cpp" "C:/Users/pauli/CLionProjects/Snake2QT/cmake-build-debug/CMakeFiles/Snake2QT.dir/Snake.cpp.obj"
   "C:/Users/pauli/CLionProjects/Snake2QT/cmake-build-debug/Snake2QT_autogen/mocs_compilation.cpp" "C:/Users/pauli/CLionProjects/Snake2QT/cmake-build-debug/CMakeFiles/Snake2QT.dir/Snake2QT_autogen/mocs_compilation.cpp.obj"
+  "C:/Users/pauli/CLionProjects/Snake2QT/StartWindow.cpp" "C:/Users/pauli/CLionProjects/Snake2QT/cmake-build-debug/CMakeFiles/Snake2QT.dir/StartWindow.cpp.obj"
   "C:/Users/pauli/CLionProjects/Snake2QT/main.cpp" "C:/Users/pauli/CLionProjects/Snake2QT/cmake-build-debug/CMakeFiles/Snake2QT.dir/main.cpp.obj"
+  "C:/Users/pauli/CLionProjects/Snake2QT/st_window.cpp" "C:/Users/pauli/CLionProjects/Snake2QT/cmake-build-debug/CMakeFiles/Snake2QT.dir/st_window.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 
